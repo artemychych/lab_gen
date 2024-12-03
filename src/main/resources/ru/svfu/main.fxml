@@ -1,0 +1,16 @@
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="MainController">
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem text="New Lab" onAction="#onCreateLab"/>
+                <MenuItem text="Save Lab" onAction="#onSaveLab"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <left>
+        <ListView fx:id="labList" prefWidth="200"/>
+    </left>
+    <center>
+        <VBox fx:id="formContainer" spacing="10" padding="10"/>
+    </center>
+</BorderPane>
